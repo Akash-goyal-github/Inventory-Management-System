@@ -60,9 +60,9 @@ Credentials to login to my sql:- (change in application.properties file in Sprin
 	
 2. Creating Product Table-
 	
-	    use product;
-        drop table product;
-        create table product(
+	    use Product;
+        drop table Product;
+        create table Product(
         productId varchar(256) Unique not null,
         productName varchar(256),
         productDescription varchar(3500),
@@ -81,9 +81,9 @@ Credentials to login to my sql:- (change in application.properties file in Sprin
 
 4. Inserting Manual Data in user Table-
 
-		use product;
-		insert into user(username,password) Values("airbus01@gmail.com","$2a$10$slYQmyNdGzTn7ZLBXBChFOC9f6kFjAqPhccnP6DxlWXx2lPk1C3G6");
-		insert into user(username,password) Values("airbus02","$2a$10$ZnnAdfh3cc7a/b1aODLeoOjifNPbHL6Vo8kpRJj.muPsVp1697hJO");
+		use Product;
+		insert into User(username,password) Values("airbus01@gmail.com","$2a$10$slYQmyNdGzTn7ZLBXBChFOC9f6kFjAqPhccnP6DxlWXx2lPk1C3G6");
+		insert into User(username,password) Values("airbus02","$2a$10$ZnnAdfh3cc7a/b1aODLeoOjifNPbHL6Vo8kpRJj.muPsVp1697hJO");
 		
 		//These are encrypted password using Bcrypt.( We have used Bcrypt so that no one can access our password from database.
 		
