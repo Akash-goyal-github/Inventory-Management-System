@@ -72,7 +72,7 @@ Credentials to login to my sql:- (change in application.properties file in Sprin
 
 3. Creating User Table-
 
-	      Drop table Author;
+	
         drop table User;
         create table User(
         username varchar(256),
