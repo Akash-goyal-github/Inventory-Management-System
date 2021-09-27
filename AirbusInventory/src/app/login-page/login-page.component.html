@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row no-gutter">
+
+        <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+        <div class="col-md-6 bg-light">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-7 mx-auto">
+                            <h3 class="display-4">Login page!</h3>
+                            <p class="text-muted mb-4">Airbus Inventory Management System</p>
+                            <form [formGroup] ="loginForm" (ngSubmit)="login()">
+                                <div class="form-group mb-3">
+                                    <input id="inputEmail" type="email" placeholder="Email Address" required="" autofocus="" class="form-control border-1 shadow-sm p-4" formControlName="emailid">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control border-1 shadow-sm p-4" formControlName="password">
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                                    <label for="customCheck1" class="custom-control-label">Remember password</label>
+                                </div>
+                                <button id="submit" type="submit" class="btn btn-primary btn-block mb-2 shadow-sm p-4">Sign In</button>
+                            </form>
+                            
+                            <br>
+                            <br>
+
+                            <label class="error-message">{{ errMessage }}</label>
+                            <br>
+                            <br>
+                            <label class="successMessage">{{ successMessage }}</label>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

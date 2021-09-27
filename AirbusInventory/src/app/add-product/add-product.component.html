@@ -1,0 +1,70 @@
+<app-main-nav>
+    <h1>Add Product</h1>
+    
+    <hr>
+    
+<div class="container p-5">
+    <form [formGroup] ="addProductForm" (ngSubmit)="addProduct()">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="pid">Product Id</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="pid" name="productid" placeholder="Product Id.."  formControlName="productid">
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="pname">Product Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pname" name="productname" placeholder="Product name.."  formControlName="productname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="category">Product Category</label>
+      </div>
+      <div class="col-75">
+        <select id="category" name="category" formControlName="category" required>
+          <option value="commercial">Commercial</option>
+          <option value="space">Space</option>
+          <option value="helicopter">Helicopter</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="punit">Product Units</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="units" name="units" placeholder="Enter units (Number Only)" min="1"  formControlName="units">
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="description">Product Description</label>
+      </div>
+      <div class="col-75">
+        <textarea id="description" name="description" placeholder="Write something.." style="height:200px"  formControlName="description"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" value="Add Product">
+
+      <br>
+      <br>
+
+      <label class="error-message">{{ errMessage }}</label>
+      <br>
+      <br>
+      <label class="successMessage">{{ successMessage }}</label>
+      
+      
+    </div>
+    </form>
+    </div>
+    </app-main-nav>

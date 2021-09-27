@@ -1,0 +1,36 @@
+
+    .login,
+    .image {
+      min-height: 100vh;
+    }
+    .bg-image {
+      background-image: url('../../assets/airbus.webp');
+      background-size:cover;
+      background-position: center center;
+      
+    }
+    #inputEmail, #inputPassword, #submit{
+        font-size: large;
+    }
+    .error-message{
+      padding: 20px;
+      background-color: white;
+      color: #D32F2F;
+      opacity: 1;
+      transition: opacity 0.6s;
+      margin-bottom: 15px;
+      width: 100%;
+      font-size: 15px;
+    
+    }
+    .successMessage{
+      
+      padding: 20px;
+      background-color: white;
+      color: #4CAF50;
+      opacity: 1;
+      transition: opacity 0.6s;
+      margin-bottom: 15px;
+      width: 100%;
+      font-size: 15px;
+    }

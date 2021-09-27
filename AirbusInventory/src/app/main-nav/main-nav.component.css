@@ -1,0 +1,81 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.nav2{
+  font-size: large;
+  font-weight: bold;
+}
+
+.sidenav {
+  width: 250px;
+  box-shadow: 3px 0 6px grey;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.menu-bar{
+ color: indigo;
+}
+.material-icons.home:focus{
+
+  flex: 1 1 auto;
+  text-align: end;
+  outline: none;
+}
+
+.material-icons.home{
+
+  flex: 1 1 auto;
+  text-align: end;
+}
+
+li{
+  cursor: pointer;
+}
+
+.material-icons, .musix{
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+
+.home:hover + .hide {
+  display: block;
+  color: white;
+}
+
+.home{
+  width: 15vw;
+}
+.but2{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  font-size: large;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hide {
+  display: block;
+  cursor: pointer;
+
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,78 @@
+<app-main-nav>
+    <h1>Get All Products</h1>
+    
+<hr>
+    <table id="product">
+        <tr>
+            <th (click)="sort('id')">
+                ID&nbsp;<span class="material-icons white">
+                    unfold_more
+                    </span>
+            </th>
+
+            <th (click)="sort('productName')">
+                Product Name&nbsp;<span class="material-icons white">
+                    unfold_more
+                    </span>
+            </th>
+            <th (click)="sort('productDescription')">
+                Product Description&nbsp;<span class="material-icons white">
+                    unfold_more
+                    </span>
+            </th>
+            <th (click)="sort('Category')">
+                Category&nbsp;<span class="material-icons white">
+                    unfold_more
+                    </span>
+            </th>
+            <th (click)="sort('units')">
+                Units&nbsp;<span class="material-icons white">
+                    unfold_more
+                    </span>
+            </th>
+            <th>
+                Update
+            </th>
+            <th>
+                Delete
+            </th>
+            
+        </tr>
+
+        <tr *ngFor = "let product of productList | orderBy: key:reverse">
+            <td>
+                {{product.productId}}
+            </td>
+            <td>
+                {{product.productName}}
+            </td>
+            <td>
+                {{product.productDescription}}
+            </td>
+            <td>
+                {{product.productCategory}}
+            </td>
+            <td>
+                {{product.units}}
+            </td>       
+            
+            <td>
+                <span class="material-icons edit" (click)="updateProduct(product)">
+                        border_color
+                    </span>
+            </td>    
+
+            <td>
+                <span class="material-icons delete" (click)="deleteProduct(product.productId)">
+                    delete
+                    </span>
+                
+            </td>    
+
+
+        </tr>
+
+
+    </table>
+    
+    </app-main-nav>
