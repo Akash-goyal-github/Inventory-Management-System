@@ -2,7 +2,7 @@
  
  ---
  
-  Objective:
+  [Objective:](https://github.com/Akash-goyal-github/Inventory-Management-System/blob/main/Problem%20Statement.PNG) 
 
       1. Design and implement the REST APIs to integrate with Sql database
           1. GET all products of a given category
