@@ -79,6 +79,17 @@ Credentials to login to my sql:- (change in application.properties file in Sprin
         password varchar(256)
         );
 
+4. Inserting Manual Data in user Table-
+
+		use product;
+		insert into user(username,password) Values("airbus01@gmail.com","$2a$10$slYQmyNdGzTn7ZLBXBChFOC9f6kFjAqPhccnP6DxlWXx2lPk1C3G6");
+		insert into user(username,password) Values("airbus02","$2a$10$ZnnAdfh3cc7a/b1aODLeoOjifNPbHL6Vo8kpRJj.muPsVp1697hJO");
+		
+		//These are encrypted password using Bcrypt.( We have used Bcrypt so that no one can access our password from database.
+		
+		1st one means:- username - airbus01@gmail.com, password- password
+		2nd one means:- username - airbus02@gmail.com, password- 1234
+
 
 Note:- The same SQL Statements are also present in schema.sql file (Under src/main/resources)
 -----------------------------------------------------------------------------------------------
