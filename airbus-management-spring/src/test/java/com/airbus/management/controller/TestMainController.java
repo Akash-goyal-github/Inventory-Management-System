@@ -22,7 +22,7 @@ public class TestMainController {
 	@InjectMocks
 	private MainController mainController;
 	
-	@Mock
+	@Mocking
 	private ProductService productService;
 	
 	@Test
