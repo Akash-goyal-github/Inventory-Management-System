@@ -18,7 +18,7 @@ public class Product {
 		super();
 		this.productId = productId;
 		this.productName = productName;
-		this.productDescription = productDescription;
+		this.productid = productid;
 		this.productCategory = productCategory;
 		this.units = units;
 	}
