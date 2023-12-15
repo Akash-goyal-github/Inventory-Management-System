@@ -1,4 +1,6 @@
-h1{
+/* General Styles */
+
+h1 {
   margin-top: 20px;
   text-align: center;
   color: black;
@@ -8,6 +10,8 @@ h1{
   box-sizing: border-box;
 }
 
+/* Form Input Styles */
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -16,7 +20,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=number]{
+input[type=number] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -43,6 +47,8 @@ input[type=submit]:hover {
   background-color: rgb(84, 129, 218);
 }
 
+/* Layout Styles */
+
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -61,14 +67,15 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.error-message{
+/* Message Styles */
+
+.error-message {
   padding: 20px;
   background-color: white;
   color: #D32F2F;
@@ -77,10 +84,9 @@ input[type=submit]:hover {
   margin-bottom: 15px;
   font-size: 15px;
   width: 100%;
-
 }
-.successMessage{
-  
+
+.successMessage {
   padding: 20px;
   background-color: white;
   color: #4CAF50;
@@ -91,7 +97,8 @@ input[type=submit]:hover {
   width: 100%;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive Styles */
+
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
